@@ -1,0 +1,6 @@
+lighttpd:
+  image: sebp/lighttpd
+  volumes:
+    - ./src:/var/www/localhost/htdocs
+  ports:
+    - 8888:80

@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Project test </title>
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <h1 id="logotext">
+                NORDIC <span id="logospan">BARISTACUP</span>
+            </h1>
+            <h4 id="slogan">be together act together learn together</h4>
+        </div>
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link " aria-current="page" href="#">ABOUT NBC</a>
+                        <a class="nav-link" href="#">2011 EVENT</a>
+                        <a class="nav-link" href="#">NORDIC ROASTER</a>
+                        <a class="nav-link" href="#">RESULTS</a>
+                        <a class="nav-link" href="#">LINKS</a>
+                        <a class="nav-link" href="#">CONTACT</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <form id="search" class="d-flex">
+            <input id="inputsearch" class="form-control me-2 rounded-pill" type="search" placeholder="Search"
+                aria-label="Search" onkeyup="onSearch(event)">
+        </form>
+    </header>
+    <main>
+        <img id="imgslide" src="./img/" class="d-block w-100" alt="..." height="500px">
+        <div id="quote" class="d-flex justify-content-between">
+            <blockquote id="blockquote"> "To creat an environment in which knowledge" <br> about coffww and it's sphere
+                can
+                be obtained "</blockquote>
+            <div id="socialmedia" class="my-5">
+                <i class="fab fa-twitter rounded-circle"></i>
+                <i class="fab fa-facebook rounded-circle"></i>
+                <i class="fas fa-rss rounded-circle"></i>
+                <i class="fas fa-fire rounded-circle"></i>
+                <i class="fas fa-envelope rounded-circle"></i>
+            </div>
+        </div>
+
+
+        <section class="d-flex">
+            <article id="list-articles" class="m-5">
+                <div class="card mb-6 d-none ">
+                    <div class="row g-0 article">
+                        <div class="col-md-3">
+                            <img id="imgcard" src="./img/p1f3eoqenj1bg9d4t1jq91cqr14i14-14.jpg" alt="...">
+                        </div>
+                        <div class="col-md-8 ">
+                            <div class="card-body">
+                                <h5 class="card-title">article A 1</h5>
+                                <p class="card-text"><small class="text-muted">Posted:22/1-2011</small></p>
+                                <p class="card-text"> This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.<span
+                                        id="dots">...</span><span id="more">Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Voluptas in fuga quam est modi saepe aspernatur, at, nisi
+                                        omnis labore consequatur deserunt. Enim dicta delectus nemo reiciendis excepturi
+                                        minus consequuntur.
+                                        Eaque alias cumque rem minima blanditiis sint mollitia earum ex, non qui? Iste,
+                                        recusandae molestiae qui porro, dolore voluptate nesciunt id totam non quia
+                                        sequi quae error sint! Suscipit, accusamus.
+                                        Minima earum nisi error nulla atque repudiandae, dolor ex. Veniam voluptas
+                                        exercitationem velit, est ratione dolore minus, expedita amet nihil voluptate
+                                        architecto possimus quae temporibus ab animi. Nemo, doloremque corporis.
+                                        Illum ipsam voluptas beatae ullam, debitis neque itaque porro nesciunt dolore
+                                        veniam facere, velit molestias consequatur exercitationem nobis quidem! Quasi
+                                        deleniti quis dolore minima, provident asperiores itaque modi ad nam.
+                                        Laboriosam ea rem quisquam, possimus ipsa necessitatibus autem dolor atque odit
+                                        blanditiis, illo fugit esse error quidem amet culpa delectus nesciunt? Possimus
+                                        eveniet voluptatem harum repellendus iure quia mollitia maiores.</span></p>
+
+                                <button type="button" class="btn btn-primary" id="readmore"
+                                        onclick="readmore(event)">
+                                        Read more
+                                </button>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+                <div class="card mb-6 d-none ">
+                    <div class="row g-0 article">
+                        <div class="col-md-3">
+                            <img id="imgcard" src="./img/p1f3eoqenj1bg9d4t1jq91cqr14i14-14.jpg" alt="...">
+                        </div>
+                        <div class="col-md-8 ">
+                            <div class="card-body">
+                                <h5 class="card-title">article A 1</h5>
+                                <p class="card-text"><small class="text-muted">Posted:22/1-2011</small></p>
+                                <p class="card-text"> This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.<span
+                                        id="dots">...</span><span id="more">Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Voluptas in fuga quam est modi saepe aspernatur, at, nisi
+                                        omnis labore consequatur deserunt. Enim dicta delectus nemo reiciendis excepturi
+                                        minus consequuntur.
+                                        Eaque alias cumque rem minima blanditiis sint mollitia earum ex, non qui? Iste,
+                                        recusandae molestiae qui porro, dolore voluptate nesciunt id totam non quia
+                                        sequi quae error sint! Suscipit, accusamus.
+                                        Minima earum nisi error nulla atque repudiandae, dolor ex. Veniam voluptas
+                                        exercitationem velit, est ratione dolore minus, expedita amet nihil voluptate
+                                        architecto possimus quae temporibus ab animi. Nemo, doloremque corporis.
+                                        Illum ipsam voluptas beatae ullam, debitis neque itaque porro nesciunt dolore
+                                        veniam facere, velit molestias consequatur exercitationem nobis quidem! Quasi
+                                        deleniti quis dolore minima, provident asperiores itaque modi ad nam.
+                                        Laboriosam ea rem quisquam, possimus ipsa necessitatibus autem dolor atque odit
+                                        blanditiis, illo fugit esse error quidem amet culpa delectus nesciunt? Possimus
+                                        eveniet voluptatem harum repellendus iure quia mollitia maiores.</span></p>
+
+                                <button type="button" class="btn btn-primary" id="readmore"
+                                        onclick="readmore(event)">
+                                        Read more
+                                </button>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+                <div class="card mb-6 d-none ">
+                    <div class="row g-0 article">
+                        <div class="col-md-3">
+                            <img id="imgcard" src="./img/p1f3eoqenj1bg9d4t1jq91cqr14i14-14.jpg" alt="...">
+                        </div>
+                        <div class="col-md-8 ">
+                            <div class="card-body">
+                                <h5 class="card-title">article A 1</h5>
+                                <p class="card-text"><small class="text-muted">Posted:22/1-2011</small></p>
+                                <p class="card-text"> This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.<span
+                                        id="dots">...</span><span id="more">Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Voluptas in fuga quam est modi saepe aspernatur, at, nisi
+                                        omnis labore consequatur deserunt. Enim dicta delectus nemo reiciendis excepturi
+                                        minus consequuntur.
+                                        Eaque alias cumque rem minima blanditiis sint mollitia earum ex, non qui? Iste,
+                                        recusandae molestiae qui porro, dolore voluptate nesciunt id totam non quia
+                                        sequi quae error sint! Suscipit, accusamus.
+                                        Minima earum nisi error nulla atque repudiandae, dolor ex. Veniam voluptas
+                                        exercitationem velit, est ratione dolore minus, expedita amet nihil voluptate
+                                        architecto possimus quae temporibus ab animi. Nemo, doloremque corporis.
+                                        Illum ipsam voluptas beatae ullam, debitis neque itaque porro nesciunt dolore
+                                        veniam facere, velit molestias consequatur exercitationem nobis quidem! Quasi
+                                        deleniti quis dolore minima, provident asperiores itaque modi ad nam.
+                                        Laboriosam ea rem quisquam, possimus ipsa necessitatibus autem dolor atque odit
+                                        blanditiis, illo fugit esse error quidem amet culpa delectus nesciunt? Possimus
+                                        eveniet voluptatem harum repellendus iure quia mollitia maiores.</span></p>
+
+                                <button type="button" class="btn btn-primary" id="readmore"
+                                        onclick="readmore(event)">
+                                        Read more
+                                </button>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+                <div class="card mb-6 d-none ">
+                    <div class="row g-0 article">
+                        <div class="col-md-3">
+                            <img id="imgcard" src="./img/p1f3eoqenj1bg9d4t1jq91cqr14i14-14.jpg" alt="...">
+                        </div>
+                        <div class="col-md-8 ">
+                            <div class="card-body">
+                                <h5 class="card-title">article A 1</h5>
+                                <p class="card-text"><small class="text-muted">Posted:22/1-2011</small></p>
+                                <p class="card-text"> This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.<span
+                                        id="dots">...</span><span id="more">Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Voluptas in fuga quam est modi saepe aspernatur, at, nisi
+                                        omnis labore consequatur deserunt. Enim dicta delectus nemo reiciendis excepturi
+                                        minus consequuntur.
+                                        Eaque alias cumque rem minima blanditiis sint mollitia earum ex, non qui? Iste,
+                                        recusandae molestiae qui porro, dolore voluptate nesciunt id totam non quia
+                                        sequi quae error sint! Suscipit, accusamus.
+                                        Minima earum nisi error nulla atque repudiandae, dolor ex. Veniam voluptas
+                                        exercitationem velit, est ratione dolore minus, expedita amet nihil voluptate
+                                        architecto possimus quae temporibus ab animi. Nemo, doloremque corporis.
+                                        Illum ipsam voluptas beatae ullam, debitis neque itaque porro nesciunt dolore
+                                        veniam facere, velit molestias consequatur exercitationem nobis quidem! Quasi
+                                        deleniti quis dolore minima, provident asperiores itaque modi ad nam.
+                                        Laboriosam ea rem quisquam, possimus ipsa necessitatibus autem dolor atque odit
+                                        blanditiis, illo fugit esse error quidem amet culpa delectus nesciunt? Possimus
+                                        eveniet voluptatem harum repellendus iure quia mollitia maiores.</span></p>
+
+                                <button type="button" class="btn btn-primary" id="readmore"
+                                        onclick="readmore(event)">
+                                        Read more
+                                </button>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+                <div class="card mb-6 d-none ">
+                    <div class="row g-0 article">
+                        <div class="col-md-3">
+                            <img id="imgcard" src="./img/p1f3eoqenj1bg9d4t1jq91cqr14i14-14.jpg" alt="...">
+                        </div>
+                        <div class="col-md-8 ">
+                            <div class="card-body">
+                                <h5 class="card-title">article A 1</h5>
+                                <p class="card-text"><small class="text-muted">Posted:22/1-2011</small></p>
+                                <p class="card-text"> This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.<span
+                                        id="dots">...</span><span id="more">Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Voluptas in fuga quam est modi saepe aspernatur, at, nisi
+                                        omnis labore consequatur deserunt. Enim dicta delectus nemo reiciendis excepturi
+                                        minus consequuntur.
+                                        Eaque alias cumque rem minima blanditiis sint mollitia earum ex, non qui? Iste,
+                                        recusandae molestiae qui porro, dolore voluptate nesciunt id totam non quia
+                                        sequi quae error sint! Suscipit, accusamus.
+                                        Minima earum nisi error nulla atque repudiandae, dolor ex. Veniam voluptas
+                                        exercitationem velit, est ratione dolore minus, expedita amet nihil voluptate
+                                        architecto possimus quae temporibus ab animi. Nemo, doloremque corporis.
+                                        Illum ipsam voluptas beatae ullam, debitis neque itaque porro nesciunt dolore
+                                        veniam facere, velit molestias consequatur exercitationem nobis quidem! Quasi
+                                        deleniti quis dolore minima, provident asperiores itaque modi ad nam.
+                                        Laboriosam ea rem quisquam, possimus ipsa necessitatibus autem dolor atque odit
+                                        blanditiis, illo fugit esse error quidem amet culpa delectus nesciunt? Possimus
+                                        eveniet voluptatem harum repellendus iure quia mollitia maiores.</span></p>
+
+                                <button type="button" class="btn btn-primary" id="readmore"
+                                        onclick="readmore(event)">
+                                        Read more
+                                </button>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+                <div class="card mb-6 d-none ">
+                    <div class="row g-0 article">
+                        <div class="col-md-3">
+                            <img id="imgcard" src="./img/p1f3eoqenj1bg9d4t1jq91cqr14i14-14.jpg" alt="...">
+                        </div>
+                        <div class="col-md-8 ">
+                            <div class="card-body">
+                                <h5 class="card-title">article A 1</h5>
+                                <p class="card-text"><small class="text-muted">Posted:22/1-2011</small></p>
+                                <p class="card-text"> This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.<span
+                                        id="dots">...</span><span id="more">Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Voluptas in fuga quam est modi saepe aspernatur, at, nisi
+                                        omnis labore consequatur deserunt. Enim dicta delectus nemo reiciendis excepturi
+                                        minus consequuntur.
+                                        Eaque alias cumque rem minima blanditiis sint mollitia earum ex, non qui? Iste,
+                                        recusandae molestiae qui porro, dolore voluptate nesciunt id totam non quia
+                                        sequi quae error sint! Suscipit, accusamus.
+                                        Minima earum nisi error nulla atque repudiandae, dolor ex. Veniam voluptas
+                                        exercitationem velit, est ratione dolore minus, expedita amet nihil voluptate
+                                        architecto possimus quae temporibus ab animi. Nemo, doloremque corporis.
+                                        Illum ipsam voluptas beatae ullam, debitis neque itaque porro nesciunt dolore
+                                        veniam facere, velit molestias consequatur exercitationem nobis quidem! Quasi
+                                        deleniti quis dolore minima, provident asperiores itaque modi ad nam.
+                                        Laboriosam ea rem quisquam, possimus ipsa necessitatibus autem dolor atque odit
+                                        blanditiis, illo fugit esse error quidem amet culpa delectus nesciunt? Possimus
+                                        eveniet voluptatem harum repellendus iure quia mollitia maiores.</span></p>
+
+                                <button type="button" class="btn btn-primary" id="readmore"
+                                        onclick="readmore(event)">
+                                        Read more
+                                </button>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+                <div class="card mb-6 d-none ">
+                    <div class="row g-0 article">
+                        <div class="col-md-3">
+                            <img id="imgcard" src="./img/p1f3eoqenj1bg9d4t1jq91cqr14i14-14.jpg" alt="...">
+                        </div>
+                        <div class="col-md-8 ">
+                            <div class="card-body">
+                                <h5 class="card-title">article A 1</h5>
+                                <p class="card-text"><small class="text-muted">Posted:22/1-2011</small></p>
+                                <p class="card-text"> This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.<span
+                                        id="dots">...</span><span id="more">Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Voluptas in fuga quam est modi saepe aspernatur, at, nisi
+                                        omnis labore consequatur deserunt. Enim dicta delectus nemo reiciendis excepturi
+                                        minus consequuntur.
+                                        Eaque alias cumque rem minima blanditiis sint mollitia earum ex, non qui? Iste,
+                                        recusandae molestiae qui porro, dolore voluptate nesciunt id totam non quia
+                                        sequi quae error sint! Suscipit, accusamus.
+                                        Minima earum nisi error nulla atque repudiandae, dolor ex. Veniam voluptas
+                                        exercitationem velit, est ratione dolore minus, expedita amet nihil voluptate
+                                        architecto possimus quae temporibus ab animi. Nemo, doloremque corporis.
+                                        Illum ipsam voluptas beatae ullam, debitis neque itaque porro nesciunt dolore
+                                        veniam facere, velit molestias consequatur exercitationem nobis quidem! Quasi
+                                        deleniti quis dolore minima, provident asperiores itaque modi ad nam.
+                                        Laboriosam ea rem quisquam, possimus ipsa necessitatibus autem dolor atque odit
+                                        blanditiis, illo fugit esse error quidem amet culpa delectus nesciunt? Possimus
+                                        eveniet voluptatem harum repellendus iure quia mollitia maiores.</span></p>
+
+                                <button type="button" class="btn btn-primary" id="readmore"
+                                        onclick="readmore(event)">
+                                        Read more
+                                </button>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+                <div class="card mb-6 d-none ">
+                    <div class="row g-0 article">
+                        <div class="col-md-3">
+                            <img id="imgcard" src="./img/p1f3eoqenj1bg9d4t1jq91cqr14i14-14.jpg" alt="...">
+                        </div>
+                        <div class="col-md-8 ">
+                            <div class="card-body">
+                                <h5 class="card-title">article A 1</h5>
+                                <p class="card-text"><small class="text-muted">Posted:22/1-2011</small></p>
+                                <p class="card-text"> This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.<span
+                                        id="dots">...</span><span id="more">Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Voluptas in fuga quam est modi saepe aspernatur, at, nisi
+                                        omnis labore consequatur deserunt. Enim dicta delectus nemo reiciendis excepturi
+                                        minus consequuntur.
+                                        Eaque alias cumque rem minima blanditiis sint mollitia earum ex, non qui? Iste,
+                                        recusandae molestiae qui porro, dolore voluptate nesciunt id totam non quia
+                                        sequi quae error sint! Suscipit, accusamus.
+                                        Minima earum nisi error nulla atque repudiandae, dolor ex. Veniam voluptas
+                                        exercitationem velit, est ratione dolore minus, expedita amet nihil voluptate
+                                        architecto possimus quae temporibus ab animi. Nemo, doloremque corporis.
+                                        Illum ipsam voluptas beatae ullam, debitis neque itaque porro nesciunt dolore
+                                        veniam facere, velit molestias consequatur exercitationem nobis quidem! Quasi
+                                        deleniti quis dolore minima, provident asperiores itaque modi ad nam.
+                                        Laboriosam ea rem quisquam, possimus ipsa necessitatibus autem dolor atque odit
+                                        blanditiis, illo fugit esse error quidem amet culpa delectus nesciunt? Possimus
+                                        eveniet voluptatem harum repellendus iure quia mollitia maiores.</span></p>
+
+                                <button type="button" class="btn btn-primary" id="readmore"
+                                        onclick="readmore(event)">
+                                        Read more
+                                </button>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+                <div class="card mb-6 d-none ">
+                    <div class="row g-0 article">
+                        <div class="col-md-3">
+                            <img id="imgcard" src="./img/p1f3eoqenj1bg9d4t1jq91cqr14i14-14.jpg" alt="...">
+                        </div>
+                        <div class="col-md-8 ">
+                            <div class="card-body">
+                                <h5 class="card-title">article A 1</h5>
+                                <p class="card-text"><small class="text-muted">Posted:22/1-2011</small></p>
+                                <p class="card-text"> This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.<span
+                                        id="dots">...</span><span id="more">Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Voluptas in fuga quam est modi saepe aspernatur, at, nisi
+                                        omnis labore consequatur deserunt. Enim dicta delectus nemo reiciendis excepturi
+                                        minus consequuntur.
+                                        Eaque alias cumque rem minima blanditiis sint mollitia earum ex, non qui? Iste,
+                                        recusandae molestiae qui porro, dolore voluptate nesciunt id totam non quia
+                                        sequi quae error sint! Suscipit, accusamus.
+                                        Minima earum nisi error nulla atque repudiandae, dolor ex. Veniam voluptas
+                                        exercitationem velit, est ratione dolore minus, expedita amet nihil voluptate
+                                        architecto possimus quae temporibus ab animi. Nemo, doloremque corporis.
+                                        Illum ipsam voluptas beatae ullam, debitis neque itaque porro nesciunt dolore
+                                        veniam facere, velit molestias consequatur exercitationem nobis quidem! Quasi
+                                        deleniti quis dolore minima, provident asperiores itaque modi ad nam.
+                                        Laboriosam ea rem quisquam, possimus ipsa necessitatibus autem dolor atque odit
+                                        blanditiis, illo fugit esse error quidem amet culpa delectus nesciunt? Possimus
+                                        eveniet voluptatem harum repellendus iure quia mollitia maiores.</span></p>
+
+                                <button type="button" class="btn btn-primary" id="readmore"
+                                        onclick="readmore(event)">
+                                        Read more
+                                </button>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+                <div class="card mb-6 d-none ">
+                    <div class="row g-0 article">
+                        <div class="col-md-3">
+                            <img id="imgcard" src="./img/p1f3eoqenj1bg9d4t1jq91cqr14i14-14.jpg" alt="...">
+                        </div>
+                        <div class="col-md-8 ">
+                            <div class="card-body">
+                                <h5 class="card-title">article A 1</h5>
+                                <p class="card-text"><small class="text-muted">Posted:22/1-2011</small></p>
+                                <p class="card-text"> This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.<span
+                                        id="dots">...</span><span id="more">Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Voluptas in fuga quam est modi saepe aspernatur, at, nisi
+                                        omnis labore consequatur deserunt. Enim dicta delectus nemo reiciendis excepturi
+                                        minus consequuntur.
+                                        Eaque alias cumque rem minima blanditiis sint mollitia earum ex, non qui? Iste,
+                                        recusandae molestiae qui porro, dolore voluptate nesciunt id totam non quia
+                                        sequi quae error sint! Suscipit, accusamus.
+                                        Minima earum nisi error nulla atque repudiandae, dolor ex. Veniam voluptas
+                                        exercitationem velit, est ratione dolore minus, expedita amet nihil voluptate
+                                        architecto possimus quae temporibus ab animi. Nemo, doloremque corporis.
+                                        Illum ipsam voluptas beatae ullam, debitis neque itaque porro nesciunt dolore
+                                        veniam facere, velit molestias consequatur exercitationem nobis quidem! Quasi
+                                        deleniti quis dolore minima, provident asperiores itaque modi ad nam.
+                                        Laboriosam ea rem quisquam, possimus ipsa necessitatibus autem dolor atque odit
+                                        blanditiis, illo fugit esse error quidem amet culpa delectus nesciunt? Possimus
+                                        eveniet voluptatem harum repellendus iure quia mollitia maiores.</span></p>
+
+                                <button type="button" class="btn btn-primary" id="readmore"
+                                        onclick="readmore(event)">
+                                        Read more
+                                </button>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+                <div class="card mb-6 d-none ">
+                    <div class="row g-0 article">
+                        <div class="col-md-3">
+                            <img id="imgcard" src="./img/p1f3eoqenj1bg9d4t1jq91cqr14i14-14.jpg" alt="...">
+                        </div>
+                        <div class="col-md-8 ">
+                            <div class="card-body">
+                                <h5 class="card-title">article A 1</h5>
+                                <p class="card-text"><small class="text-muted">Posted:22/1-2011</small></p>
+                                <p class="card-text"> This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.<span
+                                        id="dots">...</span><span id="more">Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Voluptas in fuga quam est modi saepe aspernatur, at, nisi
+                                        omnis labore consequatur deserunt. Enim dicta delectus nemo reiciendis excepturi
+                                        minus consequuntur.
+                                        Eaque alias cumque rem minima blanditiis sint mollitia earum ex, non qui? Iste,
+                                        recusandae molestiae qui porro, dolore voluptate nesciunt id totam non quia
+                                        sequi quae error sint! Suscipit, accusamus.
+                                        Minima earum nisi error nulla atque repudiandae, dolor ex. Veniam voluptas
+                                        exercitationem velit, est ratione dolore minus, expedita amet nihil voluptate
+                                        architecto possimus quae temporibus ab animi. Nemo, doloremque corporis.
+                                        Illum ipsam voluptas beatae ullam, debitis neque itaque porro nesciunt dolore
+                                        veniam facere, velit molestias consequatur exercitationem nobis quidem! Quasi
+                                        deleniti quis dolore minima, provident asperiores itaque modi ad nam.
+                                        Laboriosam ea rem quisquam, possimus ipsa necessitatibus autem dolor atque odit
+                                        blanditiis, illo fugit esse error quidem amet culpa delectus nesciunt? Possimus
+                                        eveniet voluptatem harum repellendus iure quia mollitia maiores.</span></p>
+
+                                <button type="button" class="btn btn-primary" id="readmore"
+                                        onclick="readmore(event)">
+                                        Read more
+                                </button>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+                <div class="card mb-6 d-none ">
+                    <div class="row g-0 article">
+                        <div class="col-md-3">
+                            <img id="imgcard" src="./img/p1f3eoqenj1bg9d4t1jq91cqr14i14-14.jpg" alt="...">
+                        </div>
+                        <div class="col-md-8 ">
+                            <div class="card-body">
+                                <h5 class="card-title">article A 1</h5>
+                                <p class="card-text"><small class="text-muted">Posted:22/1-2011</small></p>
+                                <p class="card-text"> This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.<span
+                                        id="dots">...</span><span id="more">Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Voluptas in fuga quam est modi saepe aspernatur, at, nisi
+                                        omnis labore consequatur deserunt. Enim dicta delectus nemo reiciendis excepturi
+                                        minus consequuntur.
+                                        Eaque alias cumque rem minima blanditiis sint mollitia earum ex, non qui? Iste,
+                                        recusandae molestiae qui porro, dolore voluptate nesciunt id totam non quia
+                                        sequi quae error sint! Suscipit, accusamus.
+                                        Minima earum nisi error nulla atque repudiandae, dolor ex. Veniam voluptas
+                                        exercitationem velit, est ratione dolore minus, expedita amet nihil voluptate
+                                        architecto possimus quae temporibus ab animi. Nemo, doloremque corporis.
+                                        Illum ipsam voluptas beatae ullam, debitis neque itaque porro nesciunt dolore
+                                        veniam facere, velit molestias consequatur exercitationem nobis quidem! Quasi
+                                        deleniti quis dolore minima, provident asperiores itaque modi ad nam.
+                                        Laboriosam ea rem quisquam, possimus ipsa necessitatibus autem dolor atque odit
+                                        blanditiis, illo fugit esse error quidem amet culpa delectus nesciunt? Possimus
+                                        eveniet voluptatem harum repellendus iure quia mollitia maiores.</span></p>
+
+                                <button type="button" class="btn btn-primary" id="readmore"
+                                        onclick="readmore(event)">
+                                        Read more
+                                </button>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+                <div class="card mb-6 d-none ">
+                    <div class="row g-0 article">
+                        <div class="col-md-3">
+                            <img id="imgcard" src="./img/p1f3eoqenj1bg9d4t1jq91cqr14i14-14.jpg" alt="...">
+                        </div>
+                        <div class="col-md-8 ">
+                            <div class="card-body">
+                                <h5 class="card-title">article A 1</h5>
+                                <p class="card-text"><small class="text-muted">Posted:22/1-2011</small></p>
+                                <p class="card-text"> This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.<span
+                                        id="dots">...</span><span id="more">Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Voluptas in fuga quam est modi saepe aspernatur, at, nisi
+                                        omnis labore consequatur deserunt. Enim dicta delectus nemo reiciendis excepturi
+                                        minus consequuntur.
+                                        Eaque alias cumque rem minima blanditiis sint mollitia earum ex, non qui? Iste,
+                                        recusandae molestiae qui porro, dolore voluptate nesciunt id totam non quia
+                                        sequi quae error sint! Suscipit, accusamus.
+                                        Minima earum nisi error nulla atque repudiandae, dolor ex. Veniam voluptas
+                                        exercitationem velit, est ratione dolore minus, expedita amet nihil voluptate
+                                        architecto possimus quae temporibus ab animi. Nemo, doloremque corporis.
+                                        Illum ipsam voluptas beatae ullam, debitis neque itaque porro nesciunt dolore
+                                        veniam facere, velit molestias consequatur exercitationem nobis quidem! Quasi
+                                        deleniti quis dolore minima, provident asperiores itaque modi ad nam.
+                                        Laboriosam ea rem quisquam, possimus ipsa necessitatibus autem dolor atque odit
+                                        blanditiis, illo fugit esse error quidem amet culpa delectus nesciunt? Possimus
+                                        eveniet voluptatem harum repellendus iure quia mollitia maiores.</span></p>
+
+                                <button type="button" class="btn btn-primary" id="readmore"
+                                        onclick="readmore(event)">
+                                        Read more
+                                </button>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+                <div class="card mb-6 d-none ">
+                    <div class="row g-0 article">
+                        <div class="col-md-3">
+                            <img id="imgcard" src="./img/p1f3eoqenj1bg9d4t1jq91cqr14i14-14.jpg" alt="...">
+                        </div>
+                        <div class="col-md-8 ">
+                            <div class="card-body">
+                                <h5 class="card-title">article A 1</h5>
+                                <p class="card-text"><small class="text-muted">Posted:22/1-2011</small></p>
+                                <p class="card-text"> This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.<span
+                                        id="dots">...</span><span id="more">Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Voluptas in fuga quam est modi saepe aspernatur, at, nisi
+                                        omnis labore consequatur deserunt. Enim dicta delectus nemo reiciendis excepturi
+                                        minus consequuntur.
+                                        Eaque alias cumque rem minima blanditiis sint mollitia earum ex, non qui? Iste,
+                                        recusandae molestiae qui porro, dolore voluptate nesciunt id totam non quia
+                                        sequi quae error sint! Suscipit, accusamus.
+                                        Minima earum nisi error nulla atque repudiandae, dolor ex. Veniam voluptas
+                                        exercitationem velit, est ratione dolore minus, expedita amet nihil voluptate
+                                        architecto possimus quae temporibus ab animi. Nemo, doloremque corporis.
+                                        Illum ipsam voluptas beatae ullam, debitis neque itaque porro nesciunt dolore
+                                        veniam facere, velit molestias consequatur exercitationem nobis quidem! Quasi
+                                        deleniti quis dolore minima, provident asperiores itaque modi ad nam.
+                                        Laboriosam ea rem quisquam, possimus ipsa necessitatibus autem dolor atque odit
+                                        blanditiis, illo fugit esse error quidem amet culpa delectus nesciunt? Possimus
+                                        eveniet voluptatem harum repellendus iure quia mollitia maiores.</span></p>
+
+                                <button type="button" class="btn btn-primary" id="readmore"
+                                        onclick="readmore(event)">
+                                        Read more
+                                </button>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+
+                <div class="card mb-6 d-none ">
+                    <div class="row g-0 article">
+                        <div class="col-md-3">
+                            <img id="imgcard" src="./img/p1f3eoqenj1bg9d4t1jq91cqr14i14-14.jpg" alt="...">
+                        </div>
+                        <div class="col-md-8 ">
+                            <div class="card-body">
+                                <h5 class="card-title">Article 2 B</h5>
+                                <p class="card-text"><small class="text-muted">Posted:22/1-2011</small></p>
+                                <p class="card-text"> This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.
+                                    <span id="dots">...</span>
+                                    <span id="more">Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Voluptas in fuga quam est modi saepe aspernatur, at, nisi
+                                        omnis labore consequatur deserunt. Enim dicta delectus nemo reiciendis excepturi
+                                        minus consequuntur.
+                                        Eaque alias cumque rem minima blanditiis sint mollitia earum ex, non qui? Iste,
+                                        recusandae molestiae qui porro, dolore voluptate nesciunt id totam non quia
+                                        sequi quae error sint! Suscipit, accusamus.
+                                        Minima earum nisi error nulla atque repudiandae, dolor ex. Veniam voluptas
+                                        exercitationem velit, est ratione dolore minus, expedita amet nihil voluptate
+                                        architecto possimus quae temporibus ab animi. Nemo, doloremque corporis.
+                                        Illum ipsam voluptas beatae ullam, debitis neque itaque porro nesciunt dolore
+                                        veniam facere, velit molestias consequatur exercitationem nobis quidem! Quasi
+                                        deleniti quis dolore minima, provident asperiores itaque modi ad nam.
+                                        Laboriosam ea rem quisquam, possimus ipsa necessitatibus autem dolor atque odit
+                                        blanditiis, illo fugit esse error quidem amet culpa delectus nesciunt? Possimus
+                                        eveniet voluptatem harum repellendus iure quia mollitia maiores.</span>
+                                </p>
+
+                                <button type="button" class="btn btn-primary" id="readmore"
+                                    onclick="readmore(event)">Read
+                                    more</button>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+                </div>
+                <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                    <div class="btn-group me-2" role="group" aria-label="First group">
+                        <button type="button" id="current-page"  class="buttonpage"></button>
+                        <button type="button" onclick="doPagination(event)" class="buttonpage">1</button>
+                        <button type="button" onclick="doPagination(event)" class="buttonpage">2</button>
+                        <button type="button" onclick="doPagination(event)" class="buttonpage">3</button>
+                        <button type="button" onclick="doPagination(event)" class="buttonpage">4</button>
+                        <button type="button" onclick="doPagination(event)" class="buttonpage">5</button>
+                        <button type="button" onclick="doPagination(event)" class="buttonpage">>></button>
+
+                    </div>
+            </article>
+
+            <aside>
+                <div class="m-5">
+                    <h3>NBC shop</h3>
+                    <p>Your shopping cart is empty <br>
+                        <a href="#">Visit the shop</a>
+                    </p>
+
+                </div>
+                <div class="m-5">
+                    <h3>Next Event</h3>
+                    <p>NORDIC BARISTA CUP 2011 copenhagen,Denmark
+                        <br> Dates:25th-27th August 2011 <br>
+                        theme:SENSORY
+                    </p>
+                    <a href="#">Sign up now</a>
+                </div>
+                <div class="m-5">
+                    <h3>Scoreboard</h3>
+                    <p>list of winners from past years</p>
+                    <ul id="test">
+                        <li>2011 -?</li>
+                        <li>2010 -Sweden</li>
+                        <li>2009 -Denmark</li>
+                        <li>2007 -Sweden</li>
+                        <li>2006 -Norway</li>
+                        <li>2005 -Norway</li>
+                    </ul>
+                </div>
+            </aside>
+        </section>
+        <section class="mx-5">
+            <h3>Nordic Barista Cup Sponsors</h3>
+            <div class=" d-flex flex-wrap justify-content-around">
+                <img class="sponsor" src="./img/Logo_NESCAFE.jpg" alt="...">
+                <img class="sponsor" src="./img/download.png" alt="...">
+                <img class="sponsor" src="./img/images (1).png" alt="...">
+                <img class="sponsor" src="./img/images.png" alt="...">
+                <img class="sponsor" src="./img/Logo_NESCAFE.jpg" alt="...">
+                <img class="sponsor" src="./img/download.png" alt="...">
+                <img class="sponsor" src="./img/images (1).png" alt="...">
+                <img class="sponsor" src="./img/images.png" alt="...">
+                <img class="sponsor" src="./img/Logo_NESCAFE.jpg" alt="...">
+                <img class="sponsor" src="./img/download.png" alt="...">
+                <img class="sponsor" src="./img/images (1).png" alt="...">
+                <img class="sponsor" src="./img/images.png" alt="...">
+            </div>
+        </section>
+
+    </main>
+
+    <footer class=" d-flex flex-wrap justify-content-around">
+        <div class="footerblock">
+            <h2 class="titrefooter">About Nordic Barista Cup</h2>
+            <p>the vision with the Nordic Barista cup is :</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi rem, laboriosam, ut saepe deleniti
+                inventore soluta velit natus, unde consequuntur magnam. Alias, asperiores aspernatur. Harum aliquam
+                optio nemo cupiditate maxime.
+                Quidem quia cumque delectus aliquid odio expedita rem consequatur assumenda eveniet id accusantium
+                inventore vero omnis iste nostrum repellat fugit error, doloremque laborum maxime cupiditate magni?
+                Eligendi labore culpa voluptate!
+                Vel doloribus possimus accusamus fugit sit ab porro velit in eos iste, recusandae repudiandae rem quod,
+                impedit voluptates voluptas provident deleniti fuga culpa. Sunt, est a deleniti impedit ea fuga!</p>
+        </div>
+        <div class="footerblock">
+            <h2 class="titrefooter">NBC Flickr Stream </h2>
+            <img class="imgfooter" src="./img/bl.jpg" alt="">
+            <img class="imgfooter" src="./img/bl2.jpg" alt="">
+            <img class="imgfooter" src="./img/bl3.jpg" alt="">
+            <img class="imgfooter" src="./img/bl4.jpg" alt="">
+            <img class="imgfooter" src="./img/bl2.jpg" alt="">
+            <img class="imgfooter" src="./img/bl3.jpg" alt="">
+            <img class="imgfooter" src="./img/bl.jpg" alt="">
+            <img class="imgfooter" src="./img/bl2.jpg" alt="">
+            <img class="imgfooter" src="./img/bl3.jpg" alt="">
+        </div>
+        <div class="footerblock">
+            <h2 class="titrefooter">Contact</h2>
+            <p>Nordie Barista Cup</p>
+            <p>Amagertov 13 1160 copenhagen K +45 33 12 04 28<br>CVR:11427693<Br>Email:bbrend@nordiebaristacup.com </p>
+            <i class="fab fa-twitter rounded-circle"></i>
+            <i class="fab fa-facebook rounded-circle"></i>
+            <i class="fas fa-rss rounded-circle"></i>
+            <i class="fas fa-fire rounded-circle"></i>
+            <i class="fas fa-envelope rounded-circle"></i>
+
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+    <script src="js/scripts.js" type="text/javascript"></script>
+</body>
+
+</html>

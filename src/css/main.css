@@ -1,0 +1,165 @@
+@font-face {
+    font-family: "Merriweather";
+    src: url(.\font\Merriweather-Black.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #111214;
+    color: white;
+    display: flex;
+}
+
+/* Logo style  */
+
+#logo {
+    margin: 30px;
+}
+
+#logotext {
+    font-family: "Merriweather";
+    line-height: 20px !important;
+}
+
+#logospan {
+    color: #5e5e60;
+}
+
+#slogan {
+    font-weight: 200 !important;
+    font-style: italic;
+    letter-spacing: 0.5px;
+}
+
+/* Nav style */
+
+.navbar {
+    margin-top: 25px;
+    color: white;
+}
+
+.nav-link {
+    color: white;
+    font-family: "Merriweather";
+    margin: 0 30px;
+}
+
+#search {
+    position: absolute;
+    top: 10px;
+    right: 100px;
+    height: 25px;
+}
+
+/* Slider style */
+
+#quote {
+    background-color: black;
+    height: 150px;
+    color: #5C5D5F;
+    font-family: "Merriweather";
+    font-size: 30px;
+}
+
+#blockquote {
+    margin: 30px;
+}
+
+#socialmedia {
+    margin: 20px;
+}
+
+.fab {
+    padding: 10px;
+    background-color: #303133;
+    color: #b7b7b7;
+}
+
+.fas {
+    padding: 10px;
+    background-color: #303133;
+    color: #b7b7b7;
+}
+
+/* card style */
+
+article {
+    width: 90%;
+}
+
+.card {
+    border: 0px !important;
+    font-family: "Merriweather";
+}
+
+#readmore {
+    background-color: #5093b6;
+    color: white;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0px 2px black;
+}
+
+#imgcard {
+    width: 200px;
+    height: 200px;
+    border: 5px solid #e9e8e8;
+}
+
+.buttonpage {
+    color: #b7b7b7;
+    padding: 10px;
+    margin: 5px;
+    border: 0px;
+}
+
+aside {
+    background-image: linear-gradient(#ebebeb, white);
+}
+
+ul {
+    list-style: none;
+}
+
+.sponsor {
+    border: 5px solid #f6f6f6;
+    width: 300px;
+    height: 200px;
+    margin: 15px;
+}
+
+h3 {
+    font-family: "Merriweather";
+}
+
+footer {
+    background-color: black;
+    color: #5C5D5F;
+}
+
+.titrefooter {
+    color: #ebebeb;
+}
+
+.footerblock {
+    margin-top: 30px;
+    width: 25%;
+    font-family: "Merriweather";
+}
+
+.imgfooter {
+    width: 100px;
+    height: 80px;
+    margin: 10px;
+}
+
+#more {
+    display: none;
+}
+
+.current-page-btn-style{font-weight: bold;color:black}
+.page-btn-style{font-weight: normal;color:#b7b7b7}
